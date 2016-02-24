@@ -1,0 +1,75 @@
+/*@import 'vars';*/
+@mainButtonColor: #000000;
+@defaultThemeColor: #FFFFFF;
+@borderColor: #EFEE33;
+
+html {
+	background-color: @mainButtonColor;
+	color: white;
+}
+
+// mixins
+.BlueBorder {
+	border-color: #87CEFA;
+}
+
+.BigBorder {border-width:  20px
+}
+
+.SolidBorder {
+	border-style: solid;
+}
+
+.DashedBorder {
+	border-style: dashed;
+}
+
+
+// parametric mixin
+.RoundedCorners(@radius: 0) {
+	border-radius: @radius;
+	-webkit-border-radius: @radius;
+	-moz-border-radius: @radius;
+}
+
+#button1 {
+	.RoundedCorners;
+	.BlueBorder;
+	.DashedBorder;
+	background-color: @mainButtonColor;
+}
+
+#button2 {
+	.RoundedCorners(25px);
+	.BlueBorder;
+	.SolidBorder;
+	.BigBorder;
+	background-color: @mainButtonColor - #4169E1;
+}
+
+#button3 {
+	.RoundedCorners(9999px);
+	border-color: @borderColor;
+	.SolidBorder;
+	background-color: @mainButtonColor + #4169E1;
+}
+
+.big-button {
+	display: inline-block;
+	width:100px;
+	height: 100px;
+	background: @mainButtonColor;
+	margin: 30px;
+}
+
+// Nested Less
+aside {
+  h1 { 
+  	color: @defaultThemeColor;
+
+
+    &:hover {
+	  background-color: @mainButtonColor;
+	}
+  }
+ }

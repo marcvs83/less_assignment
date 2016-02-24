@@ -1,0 +1,55 @@
+/*@import 'vars';*/
+html {
+  background-color: #000000;
+  color: white;
+}
+.BlueBorder {
+  border-color: #87CEFA;
+}
+.BigBorder {
+  border-width: 20px;
+}
+.SolidBorder {
+  border-style: solid;
+}
+.DashedBorder {
+  border-style: dashed;
+}
+#button1 {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-color: #87CEFA;
+  border-style: dashed;
+  background-color: #000000;
+}
+#button2 {
+  border-radius: 25px;
+  -webkit-border-radius: 25px;
+  -moz-border-radius: 25px;
+  border-color: #87CEFA;
+  border-style: solid;
+  border-width: 20px;
+  background-color: #000000;
+}
+#button3 {
+  border-radius: 9999px;
+  -webkit-border-radius: 9999px;
+  -moz-border-radius: 9999px;
+  border-color: #EFEE33;
+  border-style: solid;
+  background-color: #4169e1;
+}
+.big-button {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  background: #000000;
+  margin: 30px;
+}
+aside h1 {
+  color: #FFFFFF;
+}
+aside h1:hover {
+  background-color: #000000;
+}
